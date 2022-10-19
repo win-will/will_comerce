@@ -9,19 +9,21 @@ ProductTag.init(
     // define columns
     product_id: {
       type: DataTypes.INTEGER,
+      primaryKey: true,
       allowNull: false,
-      references: {
-        model: 'product',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'product',
+      //   key: 'id',
+      // },
     },
-    category_id: {
+    tag_id: {
       type: DataTypes.INTEGER,
+      primaryKey: true,
       allowNull: false,
-      references: {
-        model: 'category',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'tag',
+      //   key: 'id',
+      // },
     },
   },
   {
