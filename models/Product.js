@@ -30,10 +30,6 @@ Product.init(
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: 'category',
-        key: 'id',
-      },
     },
   },
   {
@@ -46,3 +42,9 @@ Product.init(
 );
 
 module.exports = Product;
+
+  // references: {
+  //   model: 'category',
+  //   key: 'id',
+  // },
+  // onDelete: 'CASCADE',

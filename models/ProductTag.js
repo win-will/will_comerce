@@ -11,19 +11,11 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
-      // references: {
-      //   model: 'product',
-      //   key: 'id',
-      // },
     },
     tag_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
-      // references: {
-      //   model: 'tag',
-      //   key: 'id',
-      // },
     },
   },
   {
@@ -36,3 +28,17 @@ ProductTag.init(
 );
 
 module.exports = ProductTag;
+
+
+// references: {
+//   model: 'product',
+//   key: 'id',
+// },
+// onUpdate: 'CASCADE',
+// onDelete: 'CASCADE',
+// references: {
+//   model: 'tag',
+//   key: 'id',
+// },
+// onUpdate: 'CASCADE',
+// onDelete: 'CASCADE',
